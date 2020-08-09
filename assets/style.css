@@ -5,7 +5,7 @@
 }
   body {
     /* more on this crazy alphanumerical value in a minute! */
-    color: #39a6b2;
+    color: darkred;
     font-family: Helvetica, Arial, sans-serif;
   }
   /* apply styles to <header> */
@@ -16,12 +16,13 @@
   header h1 {
     font-weight: bold;
     font-size: 36px;
+    text-decoration: underline;
     color: #fce138;
     margin: 0;
     display: inline;
   }
   header a {
-      text-decoration: none;
+      text-decoration: underline;
       color: #fce138;
   }
   header nav {
@@ -36,6 +37,23 @@
       font-weight: lighter;
       font-size: 22px;
   }
+
+  .work {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-item{
+      display: flex;
+      border: 5px solid;
+      margin: 5px auto;
+      border-radius: 5px;
+      font-size: 35px;
+      background-color: dimgray;
+  }
+
 footer {
     background: #fce138;
     width: 100%;
@@ -60,9 +78,11 @@ section {
 }
 /* Hero Style Start */
 .hero {
-    background-image: url("../assets/images/header.png");
     height: 600px;
-    background-size: cover;
+    width: 100%;
+    background-image: url("../assets/images/header.png");
     background-position: center;
+    font-size: larger;
+    font-weight: bold;
   }
   /* Hero Style End */
