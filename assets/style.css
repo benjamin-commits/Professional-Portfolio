@@ -45,44 +45,46 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .grid-item{
-      display: flex;
-      border: 5px solid;
-      margin: 5px auto;
-      border-radius: 5px;
-      font-size: 35px;
-      background-color: dimgray;
-  }
-
-footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
-footer a {
-    color: #024e76;
-}
 section {
     padding: 60px;
 }
 /* Hero Style Start */
 .hero {
-    height: 600px;
+    height: 250px;
     width: 100%;
+    text-align: end;
     background-image: url("../assets/images/header.png");
     background-position: center;
+    background-repeat: repeat;
     font-size: larger;
     font-weight: bold;
   }
+
+  .hero h1{
+      display: inline-block;   
+      background-color: yellow;
+      
+  }
+
+  .grid-item{
+    display: flex;
+    border: 5px solid;
+    margin: 5px auto;
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: dimgray;
+}
   /* Hero Style End */
+  @media screen and (max-width: 1024px){
+    .hero {
+      float: none;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+  
+      }
+      .hero {
+        width: auto;
+        height: auto;
+      }
+    }
