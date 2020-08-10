@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-*:before,
-*:after {
-  box-sizing: inherit;
-}
   body {
     /* more on this crazy alphanumerical value in a minute! */
     color: darkred;
