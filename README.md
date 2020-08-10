@@ -5,4 +5,4 @@ Here is a link to his finished product.
 https://benyunus1.github.io/Professional-Portfolio/
 <br>
 Here is a picture of his portfolio.
-![almostdone](https://github.com/benyunus1/Professional-Portfolio/blob/master/almostdone.png?raw=true)
+![almostdone](https://github.com/benyunus1/Professional-Portfolio/blob/master/assets/images/almostdone.png?raw=true)
