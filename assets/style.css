@@ -100,7 +100,7 @@ section {
     .work:hover{
         opacity: 50%;
     }
-    .item-1, .item-2, .item-3, .item-4, .item-5{
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-13{
         background-repeat: no-repeat;
         background-size: 100%;
         height: auto;
@@ -131,7 +131,7 @@ section {
         grid-row: 4 / 5;
     }
     .item-6{
-        grid-column: 3 / 8;
+        grid-column: 4 / 8;
         grid-row: 1 / 2;
     }
     .item-7{
@@ -171,8 +171,17 @@ section {
         align-items: flex-end;
         justify-content: center;
         border-bottom: solid;
-        grid-column: 3 / 5;
+        grid-column: 3 / 6;
         grid-row: 8 / 8;
+    }
+    .item-13{
+        background-image: url("../assets/images/recent-photo.png");
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-bottom: solid;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
     }
 /* Hero Style End */
 
@@ -186,12 +195,19 @@ SIZES FIX IN THE LARGER SIZES */
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+      .container{
+          flex-direction: column;
+          flex-wrap: wrap;
+          
+      }
       .nav ul {
           border: 1px soid rgb(212, 20, 20);
           list-style: none;
           margin: 0;
           padding: 0;
           display:flex;
+          flex-wrap: wrap;
+          flex-basis: 100%;
       }
 
 }
