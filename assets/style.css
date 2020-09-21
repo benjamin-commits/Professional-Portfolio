@@ -104,7 +104,7 @@ section {
         border: 5px solid;
     }
     .item-1{
-        background-image: url("../assets/images/work1.png");
+        background-image: url("https://raw.githubusercontent.com/Team-7-Hulk-Smash/Crypto-Alarm/master/assets/images/screenshot.png");
         grid-column: 3 / 7;
         grid-row: 3 / 5;
     }
